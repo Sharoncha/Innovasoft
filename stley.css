@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4d4dd;
+    color: #5a5a5a;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffd6d6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white; /* Letra blanca */
+    background-color: #d64767; /* Fondo rosa oscuro */
+    padding: 10px 20px; /* Añadir padding para mejor apariencia */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+header nav ul li a:hover {
+    background-color: #ffb6c1; /* Fondo rosa claro */
+    color: white; /* Mantener el texto blanco */
+}
+
+header h1 {
+    font-size: 24px;
+    color: #d64767;
+}
+
+header .user-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #d64767;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+.invoice-section {
+    width: 30%;
+    background-color: #ffd6d6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.invoice-section h2 {
+    margin-bottom: 20px;
+}
+
+.calendar {
+    position: relative;
+}
+
+.calendar span {
+    display: block;
+    background-color: #d64767;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calendar-popup {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-popup table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-popup table th,
+.calendar-popup table td {
+    padding: 5px;
+    text-align: center;
+}
+
+.calendar-popup table th {
+    background-color: #d64767;
+    color: white;
+}
+
+.calendar-popup table td {
+    background-color: #fff;
+}
+
+.calendar:hover .calendar-popup {
+    display: block;
+}
+
+.scroll-section {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.scroll-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.scroll-section ul li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.scroll-section ul li:hover {
+    background-color: #f2a2a2;
+    color: white;
+}
+
+.invoice {
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice h3 {
+    margin-bottom: 20px;
+    color: #d64767;
+}
+
+.invoice table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.invoice table th,
+.invoice table td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.invoice p {
+    margin: 5px 0;
+}
+
+.invoice p strong {
+    display: block;
+    margin-bottom: 10px;
+}
